@@ -75,6 +75,9 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 BOARD_USE_ENFORCING_SELINUX := false
 BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy_platform
 
+# init Sony
+BOARD_USES_INIT_SONY := true
+
 # Platform witout a vendor partition
 TARGET_COPY_OUT_VENDOR := system/vendor
 
