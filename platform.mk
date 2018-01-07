@@ -16,6 +16,7 @@
 PLATFORM_COMMON_PATH := device/sony/kanuti
 
 $(call inherit-product, device/sony/common-legacy/common.mk)
+$(call inherit-product, device/sony/common-recovery/recovery.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 SOMC_PLATFORM := kanuti
