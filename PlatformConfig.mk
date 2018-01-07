@@ -81,4 +81,4 @@ BOARD_USES_INIT_SONY := true
 # Platform witout a vendor partition
 TARGET_COPY_OUT_VENDOR := system/vendor
 
-include device/sony/common/CommonConfig.mk
+include device/sony/common-legacy/CommonConfig.mk
