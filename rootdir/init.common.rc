@@ -29,8 +29,8 @@ on early-init
     chmod 0755 /sys/kernel/debug
 
 on init
-    wait /dev/block/platform/soc/${ro.boot.bootdevice}
-    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    wait /dev/block/platform/soc.0/${ro.boot.bootdevice}
+    symlink /dev/block/platform/soc.0/${ro.boot.bootdevice} /dev/block/bootdevice
 
     # Mount RO partitions early and load all init files from /system/vendor
     mount_all ./fstab.${ro.hardware} --early
