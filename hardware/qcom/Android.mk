@@ -15,7 +15,7 @@ QCOM_MEDIA_ROOT := hardware/qcom/media/msm8998
 OMX_VIDEO_PATH := mm-video-v4l2
 media-hal := hardware/qcom/media/msm8998
 
-include device/sony/common/hardware/qcom/utils.mk
+include device/sony/common-legacy/hardware/qcom/utils.mk
 
 include $(display-hal)/Android.mk
 include $(call all-makefiles-under,$(audio-hal))
