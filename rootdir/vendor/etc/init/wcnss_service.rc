@@ -1,0 +1,6 @@
+service wcnss_service /odm/bin/wcnss_service
+    class main
+    user system
+    group system wifi radio
+    oneshot
+    writepid /dev/cpuset/system-background/tasks
